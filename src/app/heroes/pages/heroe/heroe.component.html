@@ -1,1 +1,35 @@
-<p>heroe works!</p>
+<div class="spinner-center" *ngIf="!heroe; else divHeroe">
+    <mat-spinner></mat-spinner>
+</div>
+
+<ng-template #divHeroe>
+    <div class="responsive-heroe">
+       
+        <div class="responsive-heroe-info">
+            <h1>{{ heroe.superhero }}</h1>
+            <mat-divider></mat-divider>
+            <br>
+            <img class="img-heroe" [src]="heroe | heroeImagen" alt="">
+        </div>
+        
+        <div class="responsive-heroe-info">
+            <h1>{{ heroe.publisher }}</h1>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <mat-list-item>{{ heroe.first_appearance }}</mat-list-item>
+                <mat-list-item>{{ heroe.characters }}</mat-list-item>
+                <mat-list-item>{{ heroe.publisher }}</mat-list-item>
+                <mat-list-item>{{ heroe.alter_ego }}</mat-list-item>
+            </mat-list>
+            <br>
+            <button
+                mat-raised-button
+                color="warn"
+                (click)="regresar()">Regresar</button>
+            <!-- <button
+                mat-raised-button
+                color="warn"
+                [routerLink]="['/heroes/listado']">Regresar</button> -->
+        </div>
+    </div>
+</ng-template>

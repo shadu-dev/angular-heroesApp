@@ -1,0 +1,25 @@
+.responsive-heroe{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .responsive-heroe-info{
+    flex-basis: 50%;
+  }
+
+  .img-heroe{
+    border-radius: 5px; 
+    width: 100%;
+  }
+
+  .spinner-center{
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .responsive-heroe{
+      flex-direction: column;
+    }
+  }    

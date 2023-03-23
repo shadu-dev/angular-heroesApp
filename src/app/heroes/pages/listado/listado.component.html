@@ -1,1 +1,10 @@
-<p>listado works!</p>
+<h1>Listado de Héroes</h1>
+<mat-divider></mat-divider>
+<br>
+
+<!-- <div style="display: flex; flex-direction: row; flex-wrap: wrap;"> -->
+<div class="responsive-heroe">
+    <div class="responsive-heroe-card" *ngFor="let heroe of heroes">
+        <app-heroe-targeta [heroe]="heroe"></app-heroe-targeta>
+    </div>
+</div>
