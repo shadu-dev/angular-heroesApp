@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 
@@ -24,6 +25,7 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     MatCardModule,
     MatProgressSpinnerModule,
+    MatSelectModule,
   ],
   exports: [
     MatAutocompleteModule,
@@ -36,6 +38,7 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     MatCardModule,
     MatProgressSpinnerModule,
+    MatSelectModule,
   ]
 })
 export class MaterialModule { }
