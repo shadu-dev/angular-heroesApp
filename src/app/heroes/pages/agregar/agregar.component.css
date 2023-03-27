@@ -32,4 +32,8 @@ img{
     .contenedor-principal{
         flex-direction: column;
     }
+    .contenedor-input{
+        /* flex-basis: auto; */
+        width: 100%;
+    }
   }

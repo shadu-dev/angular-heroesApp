@@ -1,4 +1,4 @@
-<h1>{{((heroe.id) ? heroe.superhero : 'Nuevo Héroe')}} <small>{{heroe.alter_ego}}</small> </h1>
+<h1>{{((heroe.id) ? 'Editar' : 'Nuevo')}} Héroe <small>{{heroe.superhero}}</small> </h1>
 
 <div class="contenedor-principal">
     <div class="contenedor-input">
@@ -66,7 +66,8 @@
             color="primary"
             (click)="guardar()">
             <mat-icon>edit</mat-icon>
-            Guardar</button>
+            {{((heroe.id) ? 'Actualizar' : 'Crear')}}
+            </button>
 
             <button 
             *ngIf="heroe.id"

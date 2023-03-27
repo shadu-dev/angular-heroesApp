@@ -1,0 +1,11 @@
+<h1>¿Está seguro?</h1>
+<hr>
+<p>
+    Está a punto de borrar a {{ data.superhero }}
+    <br>
+    ¿Desea continuar?
+</p>
+<div style="display:flex; justify-content: space-between;">
+    <button mat-raised-button (click)="confirmar()" color="warn">Si, borrar!</button>
+    <button mat-raised-button (click)="cerrar()">Cancelar</button>
+</div>
